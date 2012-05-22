@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Academy Air</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<div id="container">
+		<header>
+			<h1><%= link_to "Academy Air", root_url %></h1>
+			<nav>
+				<ul>
+					<li><%= link_to "View My Profile", '#' %></li>
+					<li><%= link_to "Help", help_url %></li>
+					<li><%= link_to "Sign Out", '#' %></li>
+				</ul>
+			</nav>
+			<p>Hello, Bob!</p>
+		</header>
+
+		<div id="content">
+			<%= yield %>
+		</div>
+		
+		<footer>
+			&copy;2012 Academy Air, Inc.  Got comments or suggestions? Keep 'em to yourself!
+		</footer>
+	</div>
+</body>
+</html>

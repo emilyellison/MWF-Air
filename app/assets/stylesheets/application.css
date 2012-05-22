@@ -1,0 +1,159 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+*/
+
+body {
+  font-family: "Helvetica";
+  margin: 20px auto;
+  width: 960px;
+  font-size: 18px;
+  line-height: 29px;
+  background: #EEE;
+}
+
+#container {
+  background: #FFF;
+  padding: 12px;
+  padding-bottom: 48px;
+  border: solid 1px #BBB;
+}
+
+header {
+  margin-bottom: 12px;
+  border-bottom: solid 4px #000;
+  line-height: 24px;
+  padding: 6px;
+  background: #FFF;
+}
+
+header p {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+header h1 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+header h1 a, header h1 a:active, header h1 a:visited, header h1 a:hover {
+  color: #000;
+  text-decoration: none;
+  border: none;
+}
+h2 { 
+  font-size: 24px; 
+  line-height: 48px; 
+  margin-bottom: 12px;
+//  border-bottom: solid 2px #009;
+}
+
+button {
+  font-size: 16px;
+  background: #090;
+  color: #FFF;
+}
+header ul {
+  overflow:hidden;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+header ul li {
+//  display: inline;
+  float: left;
+}
+
+header ul li  {
+  margin-left: 20px;
+  display: block;
+  text-align: right;
+}
+
+table {
+  width: 100%;
+  border-top: solid 1px #000;
+  margin-top: 24px;
+}
+table, td, th  {
+  border-collapse: collapse;
+  padding: 12px;
+}
+
+th {
+//  border-top: solid 2px #009;
+}
+tr {
+  border-bottom: solid 1px #666;
+}
+td {
+  color: #333;
+  text-align: center;
+}
+
+nav { 
+  float: right;
+}
+
+#content {
+  margin-top: 24px;
+  padding: 6px;
+  background: #FFF;
+}
+
+#search label {
+  font-size: 18px;
+  margin-right: 12px;
+  padding: 6px 0px;
+}
+#search input {
+  font-size: 16px;
+  padding: 6px;
+}
+
+footer {
+  margin-top: 12px;
+//  border-top: solid 2px #900;
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+}
+
+
+a, a:visited, a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: dotted 1px blue;
+}
+
+#help ol {
+  margin: 0;
+  padding-left: 40px;
+  margin-bottom: 12px;
+}
+
+#help p {
+  line-height: 42px;
+}
+
+#help span {
+  color: #008;
+  font-style: italic;
+}
+#ground_rules {
+  border-top: solid 1px #444;
+}

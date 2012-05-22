@@ -1,0 +1,33 @@
+== Academy Air
+
+This app will require us to use most of the essential elements of the Rails framework:
+
+* Routes
+* Controllers
+* Views
+* Models
+* Seed data
+* Session data
+* Cookies
+* Filters
+* Model Callbacks
+* 1-N Associations
+* N-N Assocations
+* has_many
+* belongs_to
+* has_secure_password
+
+
+== Getting Started
+
+1. Get this app and do what you need to see the home page. The home page is just a mockup, 
+   an example of what we should see when a user has signed in and is looking at the flight 
+   schedule.  None of the links or buttons work, except for the "Help" link.
+
+2. Read the code that's already there.
+   - Find out how the mockup is being shown.  
+   - Find the controllers, views, and stylesheets.
+
+3. Our goal is to transform the mockup into a live, database-backed Rails application.
+
+4. Use the "Help" link to access the list of user stories and business rules.
