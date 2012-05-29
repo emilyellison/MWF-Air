@@ -1,0 +1,15 @@
+<h2><%= @user.first %> <%= @user.last %></h2>
+
+<p>E-mail Address: <%= @user.email %></p>
+<p>Miles Earned: <%= @user.flyer_miles.to_i %></p>
+<br/>
+<h3>Reservations</h3>
+<br/>
+<% @user.reservations.each do |reservation| %>
+	<p>Flight Number: <%= reservation.flight.flight_number %></p>
+	<p>From: <%= reservation.flight.depart_code %></p>
+	<p>Date: <%= reservation.depart_date %> at <%= reservation.flight.depart_time.strftime('%l:%M %P') %></p>
+	<p>To: <%= reservation.flight.arrive_code %></p>
+	<p>Date: </p>
+	<br/>
+<% end %>

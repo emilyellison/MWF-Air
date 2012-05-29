@@ -1,0 +1,16 @@
+<h2>Book Your Flight</h2>
+
+<% if @reservation.errors.present? %>
+	<% @reservation.errors.full_messages.each do |message| %>
+		<li class='notice'><%= message %>.</li>
+	<% end %>
+<% end %>
+
+<%= form_for @reservation do |f| %>
+	<%= f.hidden_field :flight_id, value: params[:flight_id] %>
+	<%= f.label :depart_date %>
+	<%= f.date_select :depart_date %>
+	<%= f.label :credit_card_number %>
+	<%= f.text_field :credit_card_number %>
+	<%= f.submit 'Book Your Flight' %>
+<% end %>

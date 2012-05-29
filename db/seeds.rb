@@ -3,6 +3,7 @@ if Rails.env.development?
   Time.zone = "America/Chicago"
   
   Flight.destroy_all
+  User.destroy_all
   
   codes = ['ORD', 'JFK', 'SFO', 'LAX', 'BOS']
   
@@ -19,5 +20,8 @@ if Rails.env.development?
                   :arrive_code => arrival_code, 
                   :depart_time => (Date.today + departure_time.hours)
   end
+  
+  User.create(first: 'Emily', last: 'Ellison', email: 'emilyellison986@gmail.com', password: 'foobar', password_confirmation: 'foobar')
+  User.create(first: 'Nehemiah', last: 'Ellison', email: 'nehemiah.ellison@gmail.com', password: 'foobar', password_confirmation: 'foobar')
   
 end

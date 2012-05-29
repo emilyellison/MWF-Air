@@ -43,3 +43,9 @@ table {
 input, select {
   vertical-align: middle;
 }
+.button {
+	margin: 30px 0px;
+}
+.notice {
+	color:firebrick;
+}

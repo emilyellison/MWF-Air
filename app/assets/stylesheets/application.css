@@ -157,3 +157,10 @@ a:hover {
 #ground_rules {
   border-top: solid 1px #444;
 }
+input, label {
+	display:block;
+}
+.notice {
+	background-color:lightyellow;
+	color:darkorange;
+}
